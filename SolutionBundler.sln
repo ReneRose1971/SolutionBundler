@@ -16,8 +16,12 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{D45A5438-7D1A-497D-9759-EB8FC014D145}"
 	ProjectSection(SolutionItems) = preProject
 		Docs\Developer.md = Docs\Developer.md
-		Docs\README.md = Docs\README.md
 		Docs\Workflow.md = Docs\Workflow.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Projektmappenelemente", "Projektmappenelemente", "{11374F06-2A82-4060-A833-7D2EC572AD8D}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
 	EndProjectSection
 EndProject
 Global
