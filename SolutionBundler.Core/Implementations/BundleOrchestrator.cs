@@ -3,6 +3,9 @@ using SolutionBundler.Core.Models;
 
 namespace SolutionBundler.Core.Implementations;
 
+/// <summary>
+/// Koordiniert die Durchführung des Scans und das Erstellen des Bundles.
+/// </summary>
 public sealed class BundleOrchestrator : IBundleOrchestrator
 {
     private readonly IFileScanner _scanner;
@@ -11,6 +14,9 @@ public sealed class BundleOrchestrator : IBundleOrchestrator
     private readonly IHashCalculator _hasher;
     private readonly IBundleWriter _writer;
 
+    /// <summary>
+    /// Erstellt eine neue Instanz des Orchestrators mit den benötigten Diensten.
+    /// </summary>
     public BundleOrchestrator(
         IFileScanner scanner,
         IProjectMetadataReader metadata,
@@ -25,6 +31,12 @@ public sealed class BundleOrchestrator : IBundleOrchestrator
         _writer = writer;
     }
 
+    /// <summary>
+    /// Führt Scan, Hash-Berechnung, Klassifizierung und Bundle-Erstellung aus.
+    /// </summary>
+    /// <param name="rootPath">Wurzelverzeichnis der Solution.</param>
+    /// <param name="settings">Scan- und Ausgabeeinstellungen.</param>
+    /// <returns>Pfad zur erzeugten Ausgabedatei.</returns>
     public string Run(string rootPath, ScanSettings settings)
     {
         var files = _scanner.Scan(rootPath, settings).ToList();

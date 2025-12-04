@@ -4,11 +4,27 @@ using SolutionBundler.Core.Models;
 
 namespace SolutionBundler.Core.Implementations;
 
+/// <summary>
+/// Schreibt ein Markdown-Bundle aus den übergebenen Solution-Daten und Dateien.
+/// Die Ausgabedatei wird standardmäßig unter MyDocuments\Solutionbundler\bundles\{SolutionName}.md gespeichert.
+/// </summary>
 public sealed class MarkdownBundleWriter : IBundleWriter
 {
     private readonly ISecretMasker _masker;
+
+    /// <summary>
+    /// Erstellt einen neuen Writer mit einem Secret-Masker zum Entfernen sensibler Informationen.
+    /// </summary>
+    /// <param name="masker">Implementierung, die Geheimnisse in Dateiinhalten maskiert.</param>
     public MarkdownBundleWriter(ISecretMasker masker) => _masker = masker;
 
+    /// <summary>
+    /// Schreibt das Bundle als Markdown-Datei.
+    /// </summary>
+    /// <param name="info">Metadaten zur Solution (RootPath, SolutionName, etc.).</param>
+    /// <param name="files">Sammlung von Dateien, die ins Bundle aufgenommen werden sollen.</param>
+    /// <param name="settings">Einstellungen für Scan und Ausgabe (z. B. MaskSecrets).</param>
+    /// <returns>Vollständiger Pfad zur erzeugten Markdown-Datei.</returns>
     public string Write(SolutionInfo info, IEnumerable<FileEntry> files, ScanSettings settings)
     {
         var root = info.RootPath;
@@ -37,7 +53,7 @@ public sealed class MarkdownBundleWriter : IBundleWriter
             var anchor = ToAnchor(f.RelativePath);
             sb.AppendLine();
             sb.AppendLine($"## {f.RelativePath}");
-            sb.AppendLine($"_size_: {f.Size} bytes · _sha1_: {f.Sha1} · _action_: {f.Action}");
+            sb.AppendLine($"_size_: {f.Size} bytes - _sha1_: {f.Sha1} - _action_: {f.Action}");
             sb.AppendLine();
             sb.AppendLine($"--- FILE: {f.RelativePath} | HASH: {f.Sha1} | ACTION: {f.Action} ---");
 

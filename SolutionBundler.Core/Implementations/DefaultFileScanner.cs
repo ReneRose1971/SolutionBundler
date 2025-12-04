@@ -5,8 +5,19 @@ using SolutionBundler.Core.Models;
 
 namespace SolutionBundler.Core.Implementations;
 
+/// <summary>
+/// Standard-Implementierung des Datei-Scanners. Ermittelt Dateien in der Solution entsprechend den ScanSettings
+/// und schließt optional erkannte Testprojekte aus.
+/// </summary>
 public sealed class DefaultFileScanner : IFileScanner
 {
+    /// <summary>
+    /// Scannt das Root-Verzeichnis rekursiv nach Dateien gemäß der in <paramref name="settings"/> angegebenen Muster.
+    /// Erkennt und ignoriert dabei identifizierte Testprojekte (u. a. über .csproj-Inhalt).
+    /// </summary>
+    /// <param name="rootPath">Absoluter Pfad der Solution-Root.</param>
+    /// <param name="settings">Scan-Einstellungen mit Include/Exclude-Mustern.</param>
+    /// <returns>Sortierte, eindeutige Liste der gefundenen Dateien als `FileEntry`-Objekte.</returns>
     public IReadOnlyList<FileEntry> Scan(string rootPath, ScanSettings settings)
     {
         var root = Path.GetFullPath(rootPath);

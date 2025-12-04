@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SolutionBundler.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f6f2f870e7c3e45273993507c8fda018e362bda8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3d3e9baab931d06711957e318dc1bd2d283e0277")]
 [assembly: System.Reflection.AssemblyProductAttribute("SolutionBundler.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SolutionBundler.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

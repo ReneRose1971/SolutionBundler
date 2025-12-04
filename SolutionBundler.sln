@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 18
-VisualStudioVersion = 18.0.11222.15 d18.0
+VisualStudioVersion = 18.0.11222.15
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolutionBundler.WPF", "SolutionBundler.WPF\SolutionBundler.WPF.csproj", "{BBA8EE23-D707-4BC5-970A-2F590BB1D2DA}"
 EndProject
@@ -12,6 +12,13 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Production", "Production", "{78E74E28-9A54-47B1-B58F-A56E96B9C2F1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{50CC322A-33CA-4217-A19E-A038FB32B9CB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{D45A5438-7D1A-497D-9759-EB8FC014D145}"
+	ProjectSection(SolutionItems) = preProject
+		Docs\Developer.md = Docs\Developer.md
+		Docs\README.md = Docs\README.md
+		Docs\Workflow.md = Docs\Workflow.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

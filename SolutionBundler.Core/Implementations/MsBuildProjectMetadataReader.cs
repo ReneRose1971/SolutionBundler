@@ -4,8 +4,16 @@ using SolutionBundler.Core.Models;
 
 namespace SolutionBundler.Core.Implementations;
 
+/// <summary>
+/// Liest aus .csproj-Dateien die in den ItemGroups angegebenen BuildActions und ordnet diese den gefundenen Dateien zu.
+/// </summary>
 public sealed class MsBuildProjectMetadataReader : IProjectMetadataReader
 {
+    /// <summary>
+    /// Ergänzt die übergebene Liste von FileEntry-Objekten um die erkannten BuildActions anhand der .csproj-Inhalte.
+    /// </summary>
+    /// <param name="entries">Liste der Dateieinträge, die erweitert werden sollen.</param>
+    /// <param name="rootPath">Root-Pfad der Solution, zur Berechnung relativer Dateipfade.</param>
     public void EnrichBuildActions(IList<FileEntry> entries, string rootPath)
     {
         // einfache Heuristik: aus allen csproj BuildActions lesen und auf Einträge mappen
