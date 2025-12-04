@@ -1,0 +1,13 @@
+C:\Users\schro\Documents\Visual Studio 2022\Projects\CSharp\SolutionBundler\SolutionBundler.Core\obj\Debug\net8.0\SolutionBundler.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\schro\Documents\Visual Studio 2022\Projects\CSharp\SolutionBundler\SolutionBundler.Core\obj\Debug\net8.0\SolutionBundler.Core.AssemblyInfoInputs.cache
+C:\Users\schro\Documents\Visual Studio 2022\Projects\CSharp\SolutionBundler\SolutionBundler.Core\obj\Debug\net8.0\SolutionBundler.Core.AssemblyInfo.cs
+C:\Users\schro\Documents\Visual Studio 2022\Projects\CSharp\SolutionBundler\SolutionBundler.Core\obj\Debug\net8.0\SolutionBundler.Core.csproj.CoreCompileInputs.cache
+C:\Users\schro\Documents\Visual Studio 2022\Projects\CSharp\SolutionBundler\SolutionBundler.Core\obj\Debug\net8.0\SolutionBundler.Core.sourcelink.json
+C:\Users\schro\Documents\Visual Studio 2022\Projects\CSharp\SolutionBundler\SolutionBundler.Core\bin\Debug\net8.0\SolutionBundler.Core.deps.json
+C:\Users\schro\Documents\Visual Studio 2022\Projects\CSharp\SolutionBundler\SolutionBundler.Core\bin\Debug\net8.0\SolutionBundler.Core.dll
+C:\Users\schro\Documents\Visual Studio 2022\Projects\CSharp\SolutionBundler\SolutionBundler.Core\bin\Debug\net8.0\SolutionBundler.Core.pdb
+C:\Users\schro\Documents\Visual Studio 2022\Projects\CSharp\SolutionBundler\SolutionBundler.Core\obj\Debug\net8.0\SolutionBundler.Core.dll
+C:\Users\schro\Documents\Visual Studio 2022\Projects\CSharp\SolutionBundler\SolutionBundler.Core\obj\Debug\net8.0\refint\SolutionBundler.Core.dll
+C:\Users\schro\Documents\Visual Studio 2022\Projects\CSharp\SolutionBundler\SolutionBundler.Core\obj\Debug\net8.0\SolutionBundler.Core.pdb
+C:\Users\schro\Documents\Visual Studio 2022\Projects\CSharp\SolutionBundler\SolutionBundler.Core\obj\Debug\net8.0\ref\SolutionBundler.Core.dll
+C:\Users\schro\Documents\Visual Studio 2022\Projects\CSharp\SolutionBundler\SolutionBundler.Core\obj\Debug\net8.0\SolutionBundler.Core.csproj.AssemblyReference.cache

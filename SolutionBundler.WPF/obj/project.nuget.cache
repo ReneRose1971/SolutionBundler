@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "ofp44nOg1pw=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\schro\\Documents\\Visual Studio 2022\\Projects\\CSharp\\SolutionBundler\\SolutionBundler.WPF\\SolutionBundler.WPF.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\schro\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\8.0.0\\microsoft.extensions.dependencyinjection.8.0.0.nupkg.sha512",
+    "C:\\Users\\schro\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
