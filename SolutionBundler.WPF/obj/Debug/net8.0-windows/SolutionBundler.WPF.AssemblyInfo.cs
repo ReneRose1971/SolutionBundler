@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SolutionBundler.WPF")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3d3e9baab931d06711957e318dc1bd2d283e0277")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e23a664ee7ba8fba7ecc57c516fb71157d9716b9")]
 [assembly: System.Reflection.AssemblyProductAttribute("SolutionBundler.WPF")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SolutionBundler.WPF")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
